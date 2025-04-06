@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delight Bakery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+      background: #fefcfb;
+    }
+
+    /* Header */
+    header {
+      padding: 30px 20px;
+      background: linear-gradient(120deg, #f3d9bf, #f9ece2);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo-container img {
+      height: 60px;
+      width: 60px;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+
+    .logo-container h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: #5c3d2e;
+    }
+
+    header p {
+      width: 100%;
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 15px;
+      color: #7c5c4c;
+    }
+
+    .socials {
+      margin: 10px auto 0;
+      text-align: center;
+      width: 100%;
+    }
+
+    .socials a {
+      color: #c13584;
+      font-size: 28px;
+      margin: 0 10px;
+      transition: 0.3s;
+    }
+
+    .socials a:hover {
+      color: #e1306c;
+    }
+
+    /* Slideshow */
+    .slideshow {
+      max-width: 100%;
+      position: relative;
+      overflow: hidden;
+      margin-top: 40px;
+    }
+
+    .slides {
+      display: flex;
+      animation: slide 20s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0% {transform: translateX(0);}
+      20% {transform: translateX(0);}
+      25% {transform: translateX(-100%);}
+      45% {transform: translateX(-100%);}
+      50% {transform: translateX(-200%);}
+      70% {transform: translateX(-200%);}
+      75% {transform: translateX(-300%);}
+      95% {transform: translateX(-300%);}
+      100% {transform: translateX(0);}
+    }
+
+    /* Products */
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 60px 5%;
+      background: #fff5e9;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 15px;
+      width: 260px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      border-radius: 15px 15px 0 0;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 15px;
+    }
+
+    .product-info h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+    }
+
+    .price {
+      color: #d08a57;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    /* Footer */
+    footer {
+      background: #4b2e2e;
+      color: #f9ece2;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    footer h3 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 10px;
+    }
+
+    .footer-links {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #f0d6c5;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: #ffcab0;
+    }
+
+    .footer-bottom {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #e1bfb2;
+    }
+
+    .owner-credit {
+      margin-top: 15px;
+      font-size: 0.85rem;
+      color: #d4b6aa;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Logo -->
+  <header>
+    <div class="logo-container">
+      <img src="C:\Users\prasa\Pictures\Screenshots\Screenshot 2025-04-06 115853.png" alt="Bakery Logo" />
+      <h1>Fresh Bakehouse</h1>
+    </div>
+    <p>Freshly Baked Happiness, Delivered with Love 🍞🍪🍰</p>
+    <div class="socials">
+      <a href="https://www.instagram.com/fresh_bakehouse_vizag?igsh=ODlpaWhtcHpxZGk0" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </header>
+
+  <!-- Slideshow -->
+  <div class="slideshow">
+    <div class="slides">
+      <img src="C:\Users\prasa\Pictures\Screenshots\Screenshot 2025-04-06 115853.png" alt="Bakery 4" />
+      <img src="https://pas-wordpress-media.s3.amazonaws.com/content/uploads/2014/07/shutterstock_176646242.jpg" alt="Bakery 1" />
+      <img src="https://wallpaperbat.com/img/270457-cake-wallpaper.jpg" alt="Bakery 2" />
+      <img src="https://images5.alphacoders.com/983/thumb-1920-983077.jpg" alt="Bakery 3" />
+      <img src="https://wallpapercave.com/wp/wp5880127.jpg" alt="Bakery 4" />
+      <img src="https://images.pexels.com/photos/1721934/pexels-photo-1721934.jpeg?cs=srgb&dl=pexels-dmitry-zvolskiy-1721934.jpg&fm=jpg" alt="Bakery 4" />
+      <img src="https://cdn.pixabay.com/photo/2023/03/14/21/29/birthday-cake-7853211_1280.jpg" alt="Bakery 4" />
+      <img src="https://images5.alphacoders.com/390/thumb-1920-390899.jpg" alt="Bakery 4" />
+      <img src="https://www.goodfreephotos.com/albums/holidays/happy-birthday-images/yummy-birthday-cake-on-platter.jpg" alt="Bakery 4" />
+      <img src="https://png.pngtree.com/background/20230424/original/pngtree-birthday-cake-with-candles-and-images-hd-picture-image_2455904.jpg" alt="Bakery 4" />
+      
+    </div>
+  </div>
+
+  <!-- Product Section -->
+  <section class="products">
+    <div class="product-card">
+      <img src="https://watermark.lovepik.com/photo/20211118/large/lovepik-birthday-cake-picture_500073946.jpg" alt="Almond Biscuits">
+      <div class="product-info">
+        <h3>vennala cake</h3>
+        <p class="price">₹490</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://images6.alphacoders.com/110/thumb-1920-1107689.jpg" alt="Chocolate Muffins">
+      <div class="product-info">
+        <h3> Strawberry Cake</h3>
+        <p class="price">₹620</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" alt="Strawberry Cake">
+      <div class="product-info">
+        <h3>Chocolate Muffins</h3>
+        <p class="price">₹150</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h3>Fresh Bakehouse</h3>
+    <p>Follow us on Instagram for the latest treats & behind-the-scenes!</p>
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">About</a>
+      <a href="#">Contact-<i style="color:red">8008699345</i></a>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Delight Bakery. All rights reserved.
+    </div>
+    <div class="owner-credit">
+      Website designed & developed by Durgaprasad Kumarapu 💻
+    </div>
+  </footer>
+
+</body>
+</html>
